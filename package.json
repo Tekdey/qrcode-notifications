@@ -1,0 +1,26 @@
+{
+  "name": "qrcode-notifications",
+  "version": "1.0.0",
+  "description": "The application notify me on my phone when someone scans my qr-code which is printed on my sweater",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tekdey/qrcode-notifications.git"
+  },
+  "author": "Tekdey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tekdey/qrcode-notifications/issues"
+  },
+  "homepage": "https://github.com/Tekdey/qrcode-notifications#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
