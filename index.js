@@ -36,12 +36,12 @@ app.get("/", (req, res) => {
     ` 
     <title>Je te vois :)</title>
     <div style="display:flex; flex-direction:column; align-items:center;">
-      <h1 style="font-size:90px; font-family:cursive;">Je te vois :)</h1>
+      <h1 style="font-size:90px; font-family:sans-serif;">Je te vois :)</h1>
+      <button id='button' style="width: 500px; height:100px; font-size:35px;  font-family:sans-serif;">CLICK ET MONTE LE SON</button>
       <img src="https://c.tenor.com/o656qFKDzeUAAAAM/rick-astley-never-gonna-give-you-up.gif" style="width:500px;" draggable=false />
         <audio controls loop="loop" autoplay="autoplay" id="song">
           <source src="/rick_astley.mp3" type="audio/mpeg" />
         </audio>
-        <button id='button' style="width: 500px; height:100px; font-size:35px;  font-family:cursive;">CLICK ET MONTE LE SON</button>
     </div>
     <script>
       const button = document.getElementById('button');
