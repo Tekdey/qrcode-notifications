@@ -19,9 +19,9 @@ async function notifyMe() {
     },
   });
   let info = await transporter.sendMail({
-    from: `Look behind you <${process.env.EMAIL_SENDER}>`,
+    from: `Regarde derriere toi <${process.env.EMAIL_SENDER}>`,
     to: `${process.env.EMAIL_RECEIVER}`,
-    subject: "Someone scan qr code",
+    subject: "Quelqu'un a scanné le qr code",
     html: "😎",
   });
 }
@@ -34,9 +34,9 @@ app.get("/", (req, res) => {
   notifyMe();
   res.send(
     ` 
-    <title>I saw you :)</title>
+    <title>Je te vois :)</title>
     <div style="display:flex; flex-direction:column; align-items:center;">
-      <h1>I saw you :)</h1>
+      <h1>Je te vois :)</h1>
       <img src="https://c.tenor.com/o656qFKDzeUAAAAM/rick-astley-never-gonna-give-you-up.gif" style="width:200px;" />
         <audio controls loop="loop" autoplay="autoplay">
           <source src="/rick_astley.mp3" type="audio/mpeg" />
